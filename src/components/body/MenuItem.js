@@ -1,9 +1,10 @@
 import React from "react"
-import { Card, CardImg, CardBody, CardTitle, CardImgOverlay, CardSubtitle } from "reactstrap"
+
+import { Card, CardImg, CardBody, CardTitle, CardImgOverlay } from "reactstrap"
 
 
 const MenuItem = (props) => {
-    console.log(props)
+
     return (
         <div>
             <Card style={{ margin: '10px' }}>
@@ -11,10 +12,12 @@ const MenuItem = (props) => {
                     <CardImg width="100%" alt={props.dish.name} src={props.dish.image}
                         style={{ opacity: "0.5" }} />
                     <CardImgOverlay>
-                        <CardTitle tag="h4">
+                        <CardTitle
+                            onClick={props.DishSelect}
+                            tag="h4"
+                            style={{ cursor: "pointer" }}>
                             {props.dish.name}
                         </CardTitle>
-
                     </CardImgOverlay>
 
                 </CardBody>
