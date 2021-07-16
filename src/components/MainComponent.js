@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import Body from './body/Body';
-import Header from './header/Header';
 import Footer from './footer/Footer';
+import Header from './header/Header';
 
 
 const MainComponent = () => {
-    return (
+return (
         <div>
             <Header />
             <Body />

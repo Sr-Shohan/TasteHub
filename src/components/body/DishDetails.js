@@ -9,10 +9,11 @@ const DishDetail = (props) => {
                 <CardImg top src={props.dish.image} alt={props.dish.name} />
                 <CardBody style={{ textAlign: 'left' }}>
                     <CardTitle>{props.dish.name} </CardTitle>
-                    <CardText>{props.dish.description}
-                        <p style={{ fontWeight: 'bold', textAlign: 'right', paddingRight: '50px' }}>
-                            {`label: ${props.dish.label}`} </p>
+                    <CardText>{props.dish.description} </CardText>
+                    <CardText style={{ fontWeight: 'bold', textAlign: 'right' }}>
+                        {`label: ${props.dish.label}`}
                     </CardText>
+
                     <CardText style={{ textAlign: 'right', fontWeight: 'bold' }} >
                         {`$ ${props.dish.price}`}
                     </CardText>
@@ -22,7 +23,7 @@ const DishDetail = (props) => {
 
                 </CardBody>
             </Card>
-        </div>
+        </div >
     )
 }
 
