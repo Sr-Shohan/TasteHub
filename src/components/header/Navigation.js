@@ -36,6 +36,9 @@ class Navigation extends Component {
                                 <NavItem>
                                     <Link to='/contact' className='nav-link '>Contact</Link>
                                 </NavItem>
+                                <NavItem>
+                                    <Link to='/login' className='nav-link '>Login</Link>
+                                </NavItem>
 
                             </Nav>
                         </Collapse>
