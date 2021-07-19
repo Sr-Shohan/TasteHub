@@ -1,4 +1,20 @@
-.nice{
-    margin-top: 10px;
-  
+.aaa{
+
+   color: rgb(51, 46, 46);
+   cursor: pointer;
+}
+.aaa:hover{
+    color:rgb(37, 33, 216);
+    font-weight: bold;
+    box-shadow: inset;
+}
+.btns{
+    display: flex ;
+    flex-wrap: wrap;
+
+    justify-content: center !important;
+    padding: .75rem;
+    border-top: 1px solid #235b92;
+    border-bottom-right-radius: calc(.3rem - 1px);
+    border-bottom-left-radius: calc(.3rem - 1px);
 }
